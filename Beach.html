@@ -1,0 +1,42 @@
+        <link href="css/stylesheet5.css" rel="stylesheet" />
+
+
+<form action="BookingF.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Sayed Ali" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="email" placeholder="sayedo77.@gmail.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="phone" placeholder="498-348-3872"
+    required>
+  </div>
+   <hr>
+  <div class="elem-group">
+    <label for="adult">How Many People</label>
+    <input type="number" id="adult" name="people" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Date</label>
+    <input type="date" id="checkin-date" name="date" required>
+  </div>
+  
+  <div class="elem-group inlined">
+    <label for="checkout-date">Time</label>
+    <input type="time" id="time" name="time" required>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="message" placeholder="Tell Us More." required></textarea>
+    
+  </div>
+
+  <button type="submit" name="Beach" value="Beach">Book The Activity</button>
+</form>
+        <script src="js/script2.js">
+</script>
